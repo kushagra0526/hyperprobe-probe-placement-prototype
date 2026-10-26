@@ -1,0 +1,62 @@
+{
+ "dev": {
+  "random log lines (redeploy each round)": {
+   "correct_root_cause_pct": 52,
+   "not_confirmed_pct": 0,
+   "median_rounds": 10.0,
+   "median_hours": 10.8,
+   "median_probes": 40.0
+  },
+  "walk back from the failure": {
+   "correct_root_cause_pct": 62,
+   "not_confirmed_pct": 0,
+   "median_rounds": 5.0,
+   "median_hours": 1.5,
+   "median_probes": 20.0
+  },
+  "bisect: spread probes over the posterior": {
+   "correct_root_cause_pct": 78,
+   "not_confirmed_pct": 0,
+   "median_rounds": 4.0,
+   "median_hours": 1.5,
+   "median_probes": 16.0
+  },
+  "bisect + prior from changed code": {
+   "correct_root_cause_pct": 79,
+   "not_confirmed_pct": 0,
+   "median_rounds": 4.0,
+   "median_hours": 1.4,
+   "median_probes": 16.0
+  }
+ },
+ "held_out": {
+  "random log lines (redeploy each round)": {
+   "correct_root_cause_pct": 10,
+   "not_confirmed_pct": 34,
+   "median_rounds": 20.0,
+   "median_hours": 29.1,
+   "median_probes": 60.0
+  },
+  "walk back from the failure": {
+   "correct_root_cause_pct": 22,
+   "not_confirmed_pct": 2,
+   "median_rounds": 6.0,
+   "median_hours": 4.0,
+   "median_probes": 18.0
+  },
+  "bisect: spread probes over the posterior": {
+   "correct_root_cause_pct": 54,
+   "not_confirmed_pct": 2,
+   "median_rounds": 7.0,
+   "median_hours": 4.6,
+   "median_probes": 21.0
+  },
+  "bisect + prior from changed code": {
+   "correct_root_cause_pct": 60,
+   "not_confirmed_pct": 0,
+   "median_rounds": 7.0,
+   "median_hours": 4.6,
+   "median_probes": 21.0
+  }
+ }
+}
